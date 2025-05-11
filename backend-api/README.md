@@ -1,6 +1,10 @@
 
-project structure
---------------------
+```markdown
+# Backend API Documentation
+
+## Project Structure
+
+```
 backend-api/
 ├── controllers/
 │   └── userControllers.js
@@ -14,21 +18,30 @@ backend-api/
 ├── package.json
 ├── server.js
 └── README.md
+```
 
-<!--  -->
-npm install for install package 
+## Installation
 
-<!-- to start server:  -->
+```bash
+npm install
+```
 
+## Starting the Server
+
+```bash
 npm start
+```
 
+Server will run on: `http://localhost:3000`
 
-<!-- payload are: -->
+## API Endpoints
 
-<!-- to save user  -->
-request method : POST
-url : http://localhost:3000/api/user/
-payload: 
+### 1. Save User
+
+**Request Method**: POST  
+**URL**: `http://localhost:3000/api/user/`  
+**Payload**:
+```json
 {
     "name": "Tushar sarin",
     "age": 23,
@@ -40,20 +53,24 @@ payload:
         "coding"
     ]
 }
+```
 
-<!-- // fetch all user -->
- request method : GET
- url: http://localhost:3000/api/users
+### 2. Fetch All Users
 
- fetch user based on the id
- request method : GET 
- url: http://localhost:3000/api/user/1
+**Request Method**: GET  
+**URL**: `http://localhost:3000/api/users`
 
+### 3. Fetch User by ID
 
-<!-- // update user -->
-request method : put
-url : http://localhost:3000/api/user/1
-payload :
+**Request Method**: GET  
+**URL**: `http://localhost:3000/api/user/1`
+
+### 4. Update User
+
+**Request Method**: PUT  
+**URL**: `http://localhost:3000/api/user/1`  
+**Payload**:
+```json
 {
     "name": "Tushar Sarin",
     "age": 24,
@@ -65,10 +82,35 @@ payload :
         "coding"
     ]
 }
+```
+
+### 5. Delete User
+
+**Request Method**: DELETE  
+**URL**: `http://localhost:3000/api/user/1`
+
+## Environment Variables
+
+Create a `.env` file in the root directory with the following variables:
+
+```
+PORT=3000
+DB_HOST=your_database_host
+DB_USER=your_database_user
+DB_PASSWORD=your_database_password
+DB_NAME=your_database_name
+DB_PORT=your_database_port
+```
+
+## Dependencies
+
+All dependencies will be installed automatically when running `npm install`. The main dependencies include:
+
+- Express.js
+- PostgreSQL client
+- Body-parser
+- Dotenv
+- Validator libraries
 
 
-
-<!-- delete user -->
-
-request method : DELETE 
- url: http://localhost:3000/api/user/1
+```
