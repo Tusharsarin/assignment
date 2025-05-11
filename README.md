@@ -177,5 +177,3 @@ npm test
 cd ../frontend
 npm test
 ```
-
-```
