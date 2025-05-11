@@ -9,7 +9,7 @@ This is a Dockerized FullStack application featuring:
 - Database: PostgreSQL
 - RESTful API endpoints
 - Complete CRUD operations for User management
-
+```
 ## Prerequisites
 
 - Docker Desktop installed ([Download Docker](https://www.docker.com/products/docker-desktop))
