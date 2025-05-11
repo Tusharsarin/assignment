@@ -4,21 +4,7 @@
 
 ## Project Structure
 
-```
-backend-api/
-├── controllers/
-│   └── userControllers.js
-├── db/
-│   └── db.js
-├── routes/
-│   └── userRoutes.js
-├── validators/
-│   └── userValidator.js
-├── .env
-├── package.json
-├── server.js
-└── README.md
-```
+
 
 ## Installation
 
@@ -112,5 +98,3 @@ All dependencies will be installed automatically when running `npm install`. The
 - Dotenv
 - Validator libraries
 
-
-```
